@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Brother's Day</title>
+
+  <style>
+
+    body{
+      margin:0;
+      padding:0;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      /* Background Image */
+      background-image:url("./bhai.jpeg");
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+
+      font-family:Arial, sans-serif;
+      overflow:hidden;
+    }
+
+    .card{
+      width:340px;
+      padding:30px;
+      border-radius:20px;
+
+      /* Glass Effect */
+      background:rgba(255,255,255,0.18);
+      backdrop-filter:blur(10px);
+
+      text-align:center;
+      box-shadow:0 10px 25px rgba(0,0,0,0.25);
+      animation:pop 1s ease;
+
+      border:1px solid rgba(255,255,255,0.3);
+    }
+
+    .card h1{
+      color:white;
+      margin-bottom:15px;
+      font-size:28px;
+      text-shadow:2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .card p{
+      color:white;
+      font-size:17px;
+      line-height:1.7;
+      text-shadow:1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    .heart{
+      font-size:45px;
+      animation:beat 1s infinite;
+      margin:15px 0;
+    }
+
+    .btn{
+      margin-top:20px;
+      padding:12px 25px;
+      border:none;
+      border-radius:25px;
+      background:white;
+      color:#333;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+      background:#f1f1f1;
+    }
+
+    @keyframes beat{
+      0%{
+        transform:scale(1);
+      }
+      50%{
+        transform:scale(1.2);
+      }
+      100%{
+        transform:scale(1);
+      }
+    }
+
+    @keyframes pop{
+      from{
+        transform:scale(0);
+        opacity:0;
+      }
+      to{
+        transform:scale(1);
+        opacity:1;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h1>Happy Brother’s Day ❤️</h1>
+
+    <div class="heart">🤞✨</div>
+
+    <p>
+      Mere chote bhai ❤️<br><br>
+
+      Tu sirf mera bhai nahi,
+      mera best friend aur meri har problem ka partner hai.<br><br>
+
+      Teri hasi ghar ki jaan hai
+      aur tera saath meri strength.<br><br>
+
+      Hamesha aise hi khush rehna,
+      mast rehna aur apne sapne pure karna.<br><br>
+
+      Love you bhai 🤞✨
+    </p>
+
+    <button class="btn" onclick="showMessage()">
+      Click Here
+    </button>
+
+  </div>
+
+  <script>
+
+    function showMessage(){
+      alert("Love You Bhai ❤️");
+    }
+
+  </script>
+
+</body>
+</html>
